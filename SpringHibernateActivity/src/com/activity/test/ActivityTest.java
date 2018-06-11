@@ -8,6 +8,7 @@ import com.activity.model.Baskan;
 import com.activity.model.Etkinlik;
 import com.activity.model.Kulup;
 import com.activity.model.Ogrenci;
+import com.activity.model.User;
 
 public class ActivityTest {
 
@@ -46,6 +47,11 @@ public class ActivityTest {
 			tempEtkinlik.addOgrenci(tempStudent1);
 			tempEtkinlik.addOgrenci(tempStudent2);
 			
+			User user1 = new User("sefa", "uncu", "sefauncu@gmail.com");
+			User user2 = new User("hesam", "rad", "hesamrad@gmail.com");
+			
+			session.save(user1);
+			session.save(user2);
 			// save the students
 			System.out.println("\nSaving students ...");
 			session.save(tempStudent1);

@@ -1,31 +1,32 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>SpringHibernateActivity</groupId>
-  <artifactId>SpringHibernateActivity</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  <packaging>war</packaging>
-  <build>
-    <sourceDirectory>src</sourceDirectory>
-    <plugins>
-      <plugin>
-        <artifactId>maven-compiler-plugin</artifactId>
-        <version>3.5.1</version>
-        <configuration>
-          <source>1.8</source>
-          <target>1.8</target>
-        </configuration>
-      </plugin>
-      <plugin>
-        <artifactId>maven-war-plugin</artifactId>
-        <version>3.0.0</version>
-        <configuration>
-          <warSourceDirectory>WebContent</warSourceDirectory>
-        </configuration>
-      </plugin>
-    </plugins>
-  </build>
-     	
-		<repositories>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>SpringHibernateActivity</groupId>
+	<artifactId>SpringHibernateActivity</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>war</packaging>
+	<build>
+		<sourceDirectory>src</sourceDirectory>
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.5.1</version>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<artifactId>maven-war-plugin</artifactId>
+				<version>3.0.0</version>
+				<configuration>
+					<warSourceDirectory>WebContent</warSourceDirectory>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+	<repositories>
 		<repository>
 			<id>codelds</id>
 			<url>https://code.lds.org/nexus/content/groups/main-repo</url>
@@ -33,7 +34,7 @@
 	</repositories>
 
 	<properties>
-	 	<!-- updated 01.05.2017 -->
+		<!-- updated 01.05.2017 -->
 		<spring.version>5.0.3.RELEASE</spring.version>
 		<jstl.version>1.2</jstl.version>
 		<validation.api.version>1.1.0.Final</validation.api.version>
@@ -58,7 +59,7 @@
 			<artifactId>spring-webmvc</artifactId>
 			<version>${spring.version}</version>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>javax.servlet-api</artifactId>
@@ -77,69 +78,31 @@
 			<version>${spring.version}</version>
 		</dependency>
 
-		<!-- validation-api & hibernate-validator
-		
-		<dependency>
-			<groupId>javax.validation</groupId>
-			<artifactId>validation-api</artifactId>
-			<version>1.1.0.Final</version>
-		</dependency>
-
-		<dependency>
-			<groupId>org.hibernate</groupId>
-			<artifactId>hibernate-validator</artifactId>
-			<version>5.3.4.Final</version>
-		</dependency>
-
-		<dependency>
-			<groupId>log4j</groupId>
-			<artifactId>log4j</artifactId>
-			<version>${log4j.version}</version>
-		</dependency>
-
-		
-
-		<dependency>
-			<groupId>com.lowagie</groupId>
-			<artifactId>itext</artifactId>
-			<version>${itext.version}</version>
-		</dependency>
-        -->
+		<!-- validation-api & hibernate-validator <dependency> <groupId>javax.validation</groupId> 
+			<artifactId>validation-api</artifactId> <version>1.1.0.Final</version> </dependency> 
+			<dependency> <groupId>org.hibernate</groupId> <artifactId>hibernate-validator</artifactId> 
+			<version>5.3.4.Final</version> </dependency> <dependency> <groupId>log4j</groupId> 
+			<artifactId>log4j</artifactId> <version>${log4j.version}</version> </dependency> 
+			<dependency> <groupId>com.lowagie</groupId> <artifactId>itext</artifactId> 
+			<version>${itext.version}</version> </dependency> -->
 		<!-- apache poi -->
 
-		<!-- https://mvnrepository.com/artifact/org.apache.poi/poi
-		<dependency>
-		    <groupId>org.apache.poi</groupId>
-		    <artifactId>poi</artifactId>
-		    <version>${poi.version}</version>
-		</dependency>
-        
-		<dependency>
-			<groupId>org.apache.poi</groupId>
-			<artifactId>poi-ooxml</artifactId>
-			<version>${poi.version}</version>
-		</dependency>
-        -->
+		<!-- https://mvnrepository.com/artifact/org.apache.poi/poi <dependency> 
+			<groupId>org.apache.poi</groupId> <artifactId>poi</artifactId> <version>${poi.version}</version> 
+			</dependency> <dependency> <groupId>org.apache.poi</groupId> <artifactId>poi-ooxml</artifactId> 
+			<version>${poi.version}</version> </dependency> -->
 		<!-- jexcel api -->
 
-		<!-- https://mvnrepository.com/artifact/net.sourceforge.jexcelapi/jxl 
-		<dependency>
-		    <groupId>net.sourceforge.jexcelapi</groupId>
-		    <artifactId>jxl</artifactId>
-		    <version>${jxl.version}</version>
-		</dependency>
-		-->
+		<!-- https://mvnrepository.com/artifact/net.sourceforge.jexcelapi/jxl <dependency> 
+			<groupId>net.sourceforge.jexcelapi</groupId> <artifactId>jxl</artifactId> 
+			<version>${jxl.version}</version> </dependency> -->
 
 		<!-- Jackson Mapper -->
 		<!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
-        <!--
-       	<dependency>
-		    <groupId>com.fasterxml.jackson.core</groupId>
-		    <artifactId>jackson-databind</artifactId>
-		    <version>${jackson.version}</version>
-		</dependency> -->
+		<!-- <dependency> <groupId>com.fasterxml.jackson.core</groupId> <artifactId>jackson-databind</artifactId> 
+			<version>${jackson.version}</version> </dependency> -->
 
-		<!--OXM XML  -->
+		<!--OXM XML -->
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-oxm</artifactId>
@@ -148,26 +111,18 @@
 
 		<!-- Apache Tiles dependency -->
 
-		<!-- https://mvnrepository.com/artifact/org.apache.tiles/tiles-core 
-		<dependency>
-		    <groupId>org.apache.tiles</groupId>
-		    <artifactId>tiles-core</artifactId>
-		    <version>${tiles.version}</version>
-		</dependency>
-		-->
+		<!-- https://mvnrepository.com/artifact/org.apache.tiles/tiles-core <dependency> 
+			<groupId>org.apache.tiles</groupId> <artifactId>tiles-core</artifactId> <version>${tiles.version}</version> 
+			</dependency> -->
 
 
-		<!-- https://mvnrepository.com/artifact/org.apache.tiles/tiles-jsp 
-		<dependency>
-		    <groupId>org.apache.tiles</groupId>
-		    <artifactId>tiles-jsp</artifactId>
-		    <version>${tiles.version}</version>
-		</dependency>
-        -->
+		<!-- https://mvnrepository.com/artifact/org.apache.tiles/tiles-jsp <dependency> 
+			<groupId>org.apache.tiles</groupId> <artifactId>tiles-jsp</artifactId> <version>${tiles.version}</version> 
+			</dependency> -->
 
 		<!-- JPA dependency -->
 		<!-- https://mvnrepository.com/artifact/org.eclipse.persistence/javax.persistence -->
-		
+
 		<dependency>
 			<groupId>org.eclipse.persistence</groupId>
 			<artifactId>javax.persistence</artifactId>
@@ -176,36 +131,39 @@
 
 		<!-- EclipseLink dependency -->
 		<!-- https://mvnrepository.com/artifact/org.eclipse.persistence/eclipselink -->
-		<!-- disable when using hibernate 
-		 
-		<dependency>
-			<groupId>org.eclipse.persistence</groupId>
-			<artifactId>eclipselink</artifactId>
-			<version>${eclipselink.version}</version>
-		</dependency>
-		-->
+		<!-- disable when using hibernate <dependency> <groupId>org.eclipse.persistence</groupId> 
+			<artifactId>eclipselink</artifactId> <version>${eclipselink.version}</version> 
+			</dependency> -->
 		<!-- Oracle dependency -->
-		<!-- https://mvnrepository.com/artifact/oracle/ojdbc6
-		<dependency>
-			<groupId>com.oracle</groupId>
-			<artifactId>ojdbc6</artifactId>
-			<version>${oracle.version}</version>
-		</dependency>
-		 -->
+		<!-- https://mvnrepository.com/artifact/oracle/ojdbc6 <dependency> <groupId>com.oracle</groupId> 
+			<artifactId>ojdbc6</artifactId> <version>${oracle.version}</version> </dependency> -->
 		<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
 		<dependency>
-		    <groupId>mysql</groupId>
-		    <artifactId>mysql-connector-java</artifactId>
-		    <version>${mysql.version}</version>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>${mysql.version}</version>
 		</dependency>
 
 		<!-- hibernate dependency -->
-	
+
 		<dependency>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-core</artifactId>
 			<version>${hibernate.version}</version>
 		</dependency>
- 	    
+		<!-- Add Jackson for JSON converters -->
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>2.9.5</version>
+		</dependency>
+
+		<!-- to compensate for java 9+ not including jaxb -->
+		<dependency>
+			<groupId>javax.xml.bind</groupId>
+			<artifactId>jaxb-api</artifactId>
+			<version>2.3.0</version>
+		</dependency>
+
 	</dependencies>
 </project>

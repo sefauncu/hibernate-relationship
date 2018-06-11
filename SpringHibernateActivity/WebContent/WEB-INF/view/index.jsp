@@ -30,6 +30,9 @@
 		<h2>
 			<a style="color: red" href="addBaskan">Baskan Ekle</a>
 		</h2>
+		<h2>
+			<a style="color: blue" href="${pageContext.request.contextPath}/api/presidents">Baskanlar</a>
+		</h2>
 		
 		<h2>
 			<a style="color: black" href="addOgrenci">Ogrenci Ekle</a>
